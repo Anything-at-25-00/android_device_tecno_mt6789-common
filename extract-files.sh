@@ -67,8 +67,6 @@ function blob_fixup() {
         vendor/bin/hw/mt6789/camerahalserver|\
         vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so|\
         vendor/lib*/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so|\
-        vendor/bin/hw/android.hardware.thermal@2.0-service.mtk|\
-        vendor/lib*/hw/android.hardware.thermal@2.0-impl.so|\
         vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service)
             "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
             "${PATCHELF}" --replace-needed "libbinder.so" "libbinder-v32.so" "${2}"
@@ -131,6 +129,10 @@ function blob_fixup() {
         vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so)
             "${PATCHELF}" --set-soname "$(basename "${1}")" "${2}"
             ;;
+        vendor/etc/init/init.thermal_core.rc)
+            [ "$2" = "" ] && return 0
+            sed -i 's|ro.vendor.mtk_thermal_2_0|vendor.thermal.link_ready|g' "${2}"
+           ;;
     esac
 }
 

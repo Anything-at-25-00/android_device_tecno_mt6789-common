@@ -24,7 +24,7 @@
       "Multiplier": 0.001
     },
     {
-      "Name": "mtktsAP",
+      "Name": "ap_ntc",
       "Type": "SKIN",
       "HotThreshold": ["NAN", "NAN", "NAN", 50.0, 70.0, 80.0, 90.0],
       "VrThreshold": "50.0",

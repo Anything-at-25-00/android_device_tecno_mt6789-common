@@ -12,6 +12,9 @@ type storage_dbg_data_file, file_type, core_data_file_type, data_file_type;
 type sysfs_fp_name_path, fs_type, sysfs_type;
 type vendor_gf_data_file, file_type, data_file_type;
 
+# MMC
+type vendor_sysfs_mmc_device_type, fs_type, sysfs_type;
+
 # NFC
 type nfc_vendor_data_file, file_type, data_file_type;
 

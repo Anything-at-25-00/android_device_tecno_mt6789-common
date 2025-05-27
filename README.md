@@ -1,4 +1,4 @@
-# Common/Unified hybrid device tree for TECNO Pova 4 Series MT6789 devices
+# Common/Unified hybrid device tree for TECNO Pova 4 Series MT6789 devices - for YAAP
 
 ```
 #

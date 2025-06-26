@@ -36,6 +36,7 @@
 /dev/pn553                                                                                  u:object_r:nfc_device:s0
 
 # Power
+/vendor/bin/hw/android\.hardware\.power-service\.pixel-libperfmgr                      u:object_r:hal_power_default_exec:s0
 /sys/devices/platform/soc/11017000.i2c/i2c-5/5-0053/power_supply/charger(/.*)?                     u:object_r:sysfs_batteryinfo:s0
 
 # Sensor stuff

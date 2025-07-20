@@ -325,9 +325,13 @@ ro.vendor.mtk_single_bin_modem_support=1
 ro.vendor.mtk_world_phone_policy=0
 ro.vendor.sim_me_lock_mode=3
 
+# RKPD
+remote_provisioning.enable_rkpd=true
+remote_provisioning.hostname=remoteprovisioning.googleapis.com
+remote_provisioning.connect_timeout_millis=2000
+
 # Sensors
 ro.vendor.mtk.sensor.support=yes
-
 
 # SoC
 ro.soc.manufacturer=Mediatek

@@ -748,6 +748,7 @@ vendor/lib64/libfgauge_gm30.so
 
 # Gatekeeper
 vendor/lib64/hw/libMcGatekeeper.so
+vendor/lib64/hw/libSoftGatekeeper.so
 vendor/lib64/libMcClient.so
 
 # GNSS

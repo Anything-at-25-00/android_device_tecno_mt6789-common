@@ -154,8 +154,8 @@ $(call inherit-product, vendor/sony/dolby/setup.mk)
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm-service.clearkey:64 \
-    android.hardware.drm@1.4.vendor:64
+    com.android.hardware.drm.clearkey \
+    android.hardware.drm@1.4.vendor
 
 # Dynamic partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -165,7 +165,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 
 # FastbootD
 PRODUCT_PACKAGES += \
-    android.hardware.fastboot@1.1-impl-mock:64 \
+    android.hardware.fastboot-service.example_recovery \
     fastbootd:64
 
 # Fingerprint
@@ -499,6 +499,7 @@ PRODUCT_PACKAGES += \
     libwifi-hal-wrapper:64 \
     android.hardware.wifi-service \
     wpa_supplicant \
+    lib_driver_cmd_mt66xx \
     hostapd \
     libkeystore-wifi-hidl:64 \
     libkeystore-engine-wifi-hidl:64

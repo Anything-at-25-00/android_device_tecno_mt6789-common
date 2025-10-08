@@ -250,7 +250,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.transsion
+    android.hardware.lights-service.millennium
 
 # Linker
 PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
@@ -466,7 +466,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/lineage/interfaces/power-libperfmgr \
     hardware/google/interfaces \
     hardware/google/pixel \
-    hardware/transsion
+    hardware/millennium
 
 # Speed profile services and wifi-service to reduce RAM and storage.
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile

@@ -27,7 +27,7 @@
 /(vendor|system\/vendor)/bin/hw/android\.hardware\.health@2\.1-service         u:object_r:hal_health_default_exec:s0
 
 # Lights
-/(vendor|system/vendor)/bin/hw/android\.hardware\.lights-service\.transsion             u:object_r:hal_light_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.lights-service\.millennium             u:object_r:hal_light_default_exec:s0
 
 # mmc device type
 /sys/devices/platform/soc/11240000.mmc/mmc_host/mmc0/mmc0:[a-f0-9]+/type               u:object_r:vendor_sysfs_mmc_device_type:s0
@@ -59,7 +59,7 @@
 /sys/devices/platform/odm/odm:tran_battery/OTG_CTL                                     u:object_r:sysfs_OTG_CTL_file:s0
 
 # Vibrator
-/(vendor|system/vendor)/bin/hw/android\.hardware\.vibrator-service\.transsion           u:object_r:hal_vibrator_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.vibrator-service\.millennium           u:object_r:hal_vibrator_default_exec:s0
 /(vendor|system\/vendor)/bin/hw/android\.hardware\.vibrator@1\.0-service              u:object_r:hal_vibrator_default_exec:s0
 /(vendor|system\/vendor)/bin/hw/android\.hardware\.vibrator-service.example           u:object_r:hal_vibrator_default_exec:s0
 /(vendor|system\/vendor)/bin/hw/android\.hardware\.vibrator@1\.0-service-mediatek            u:object_r:hal_vibrator_default_exec:s0

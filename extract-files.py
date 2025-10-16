@@ -23,7 +23,7 @@ namespace_imports = [
     'device/tecno/mt6789-common',
     'hardware/mediatek',
     'hardware/mediatek/libmtkperf_client',
-    'hardware/transsion',
+    'hardware/millennium',
 ]
 
 lib_fixups: lib_fixups_user_type = {

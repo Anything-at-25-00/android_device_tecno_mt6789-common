@@ -137,7 +137,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0.vendor:64 \
     android.hardware.graphics.composer@2.3-service \
-    android.hardware.memtrack-service.mediatek-mali
+    android.hardware.memtrack-service.mediatek
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0.vendor:64 \
@@ -250,7 +250,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.transsion
+    android.hardware.lights-service.millennium
 
 # Linker
 PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
@@ -290,7 +290,6 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     FrameworksResCommon \
     OpenDeltaOverlayMT6789 \
-    PowerOffAlarmOverlayCommon \
     SettingsResOverlayCommon \
     SystemUIResCommon \
     TetheringResOverlayCommon \
@@ -467,7 +466,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/mediatek/libmtkperf_client \
     hardware/google/interfaces \
     hardware/google/pixel \
-    hardware/transsion
+    hardware/millennium
 
 # Speed profile services and wifi-service to reduce RAM and storage.
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile

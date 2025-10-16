@@ -6,32 +6,32 @@
 # 1 "<built-in>" 2
 # 1 "vendor/mediatek/proprietary/hardware/fstab/mt6789/fstab.in.mt6789" 2
 # 172 "vendor/mediatek/proprietary/hardware/fstab/mt6789/fstab.in.mt6789"
-system /system erofs ro wait,slotselect,avb=vbmeta_system,logical,first_stage_mount
+system /system erofs ro wait,slotselect,avb=vbmeta_system,logical,first_stage_mount,readahead_size_kb=128
 
 
-vendor /vendor erofs ro wait,slotselect,avb,logical,first_stage_mount
+vendor /vendor erofs ro wait,slotselect,avb,logical,first_stage_mount,readahead_size_kb=128
 
 
-product /product erofs ro wait,slotselect,avb,logical,first_stage_mount
-
-
-
-system_ext /system_ext erofs ro wait,slotselect,avb,logical,first_stage_mount
+product /product erofs ro wait,slotselect,avb,logical,first_stage_mount,readahead_size_kb=128
 
 
 
+system_ext /system_ext erofs ro wait,slotselect,avb,logical,first_stage_mount,readahead_size_kb=128
 
 
 
-vendor_dlkm /vendor_dlkm erofs ro wait,slotselect,avb,logical,first_stage_mount
 
 
-odm_dlkm /odm_dlkm erofs ro wait,slotselect,avb,logical,first_stage_mount
+
+vendor_dlkm /vendor_dlkm erofs ro wait,slotselect,avb,logical,first_stage_mount,readahead_size_kb=128
+
+
+odm_dlkm /odm_dlkm erofs ro wait,slotselect,avb,logical,first_stage_mount,readahead_size_kb=128
 
 
 /dev/block/by-name/metadata /metadata ext4 noatime,nosuid,nodev,discard wait,check,formattable,first_stage_mount
 
-/dev/block/by-name/userdata /data f2fs noatime,nosuid,nodev,discard,noflush_merge,fsync_mode=nobarrier,reserve_root=134217,resgid=1065,inlinecrypt wait,check,formattable,quota,latemount,reservedsize=128m,checkpoint=fs,fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized,keydirectory=/metadata/vold/metadata_encryption,fsverity,
+/dev/block/by-name/userdata /data f2fs noatime,nosuid,nodev,discard,noflush_merge,fsync_mode=nobarrier,reserve_root=134217,resgid=1065,inlinecrypt wait,check,formattable,quota,latemount,reservedsize=128m,checkpoint=fs,fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized,keydirectory=/metadata/vold/metadata_encryption,fsverity,readahead_size_kb=128
 
 
 
@@ -150,4 +150,4 @@ odm_dlkm /odm_dlkm erofs ro wait,slotselect,avb,logical,first_stage_mount
 
 
 /dev/block/by-name/tkv /tkv emmc defaults defaults
-/dev/block/zram0 none swap defaults zramsize=50%,zram_backingdev_size=512M
+/dev/block/zram0 none swap defaults zramsize=50%

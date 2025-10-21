@@ -19,13 +19,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.aee.rc",
-    src: "etc/init/hw/init.aee.rc",
-    relative_install_path: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "init.mt6789.power.rc",
     src: "etc/init/hw/init.mt6789.power.rc",
     relative_install_path: "init/hw",

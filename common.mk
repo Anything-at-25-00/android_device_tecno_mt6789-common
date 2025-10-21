@@ -211,7 +211,6 @@ PRODUCT_PACKAGES += \
     fstab.mt6789 \
     fstab.mt6789.vendor_ramdisk \
     init_connectivity.rc \
-    init.aee.rc \
     init.connectivity.common.rc \
     init.connectivity.rc \
     init.insmod.sh \

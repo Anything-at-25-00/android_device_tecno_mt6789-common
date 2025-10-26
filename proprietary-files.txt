@@ -811,18 +811,13 @@ vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.truston
 vendor/lib/libladder.so
 vendor/lib64/libladder.so
 
-# Media
-vendor/bin/mt6789/v3avpud.mt6789;SYMLINK=vendor/bin/v3avpud
-vendor/etc/init/v3avpud.rc
-vendor/lib/mt6789/libvcodec_utility.so;SYMLINK=vendor/lib/libvcodec_utility.so
-vendor/lib/mt6789/libvcodec_utility_v3a.so;SYMLINK=vendor/lib/libvcodec_utility_v3a.so
-vendor/lib/mt6789/libvcodecdrv.so;SYMLINK=vendor/lib/libvcodecdrv.so
-vendor/lib/mt6789/libvcodecdrv_v3a.so;SYMLINK=vendor/lib/libvcodecdrv_v3a.so
-vendor/lib/mt6789/libvpudv3a_vcodec.so;SYMLINK=vendor/lib/libvpudv3a_vcodec.so
-vendor/lib/libvcodecdrv_header_stub.so
-vendor/lib/libvcodec_oal.so;DISABLE_CHECKELF
-vendor/lib/libvcodec_utility_plat.mt6789.so
-vendor/lib64/libvpu.so
+# Media - from a16nsxx-user-16-BP2A.250605.031.A3-A165FXXU5CYJ9-release-keys
+vendor/bin/mt6789/v3avpud-64b.mt6789;SYMLINK=vendor/bin/v3avpud-64b|fdc3a6f1a60d43c1705a902698ee8851d3b10b88
+vendor/etc/init/v3avpud-64b.rc|725a9be947d9def93b4f83ddae06503b16e9714c
+vendor/lib64/mt6789/libvcodec_utility_v3a.so;SYMLINK=vendor/lib64/libvcodec_utility_v3a.so|668727e27e02c894ad4ac04e57aae6e391f0f681
+vendor/lib64/mt6789/libvcodecdrv_v3a.so;SYMLINK=vendor/lib64/libvcodecdrv_v3a.so|4079b6131497938ec62ed64fece945750e0bd852
+vendor/lib64/mt6789/libvpudv3a_vcodec.so;SYMLINK=vendor/lib64/libvpudv3a_vcodec.so|cede8e0ac28d93a60a190f89dd410c2da6e9b059
+vendor/lib64/libvpu.so|dda66fa59f09bf083ef165ef55ad081a5817dd8b
 
 # Media (C2)
 vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
@@ -835,36 +830,26 @@ vendor/lib64/libcodec2_vpp_qt_plugin.so
 vendor/lib64/libcodec2_vpp_rs_plugin.so
 vendor/lib64/libformatter.so
 
-# Media (Common)
-vendor/lib/AVCSecureVdecCA.so
-vendor/lib/HEVCSecureVdecCA.so
-vendor/lib/VP9SecureVdecCA.so
-vendor/lib/libAVCSecureVencCA.so
-vendor/lib/libHEVCdec_sa.ca7.android.so;DISABLE_CHECKELF
-vendor/lib/libh264dec_customize.so
-vendor/lib/libh264dec_sa.ca7.so;DISABLE_CHECKELF
-vendor/lib/libh264dec_sd.ca7.so;DISABLE_CHECKELF
-vendor/lib/libh264dec_se.ca7.so;DISABLE_CHECKELF
-vendor/lib/libh264enc_sa.ca7.so;DISABLE_CHECKELF
-vendor/lib/libhevce_sb.ca7.android.so;DISABLE_CHECKELF
-vendor/lib/libion_mtk.so
-vendor/lib/libion_ulit.so
-vendor/lib/libmp4enc_sa.ca7.so;DISABLE_CHECKELF
-vendor/lib/libmp4enc_xa.ca7.so;DISABLE_CHECKELF
-vendor/lib/libvp8dec_sa.ca7.so;DISABLE_CHECKELF
-vendor/lib/libvp8enc_sa.ca7.so;DISABLE_CHECKELF
-vendor/lib/libvp9dec_sa.ca7.so;DISABLE_CHECKELF
-vendor/lib64/AVCSecureVdecCA.so
-vendor/lib64/HEVCSecureVdecCA.so
-vendor/lib64/VP9SecureVdecCA.so
-vendor/lib64/libAVCSecureVencCA.so
-vendor/lib64/libJpgEncPipe.so
-vendor/lib64/libjpeg-alpha-oal_vendor.so
-vendor/lib64/libjpeg-alpha_vendor.so
-vendor/lib64/libhevce_sb.ca7.android.so
-vendor/lib64/libheichal.so
-vendor/lib64/libvcodec_oal.so
-vendor/lib64/libvcodecdrv_header_stub.so
+# Media (Common) - from a16nsxx-user-16-BP2A.250605.031.A3-A165FXXU5CYJ9-release-keys
+vendor/lib64/libHEVCdec_sa.ca7.android.so|74c12a06d2e0bd43205f766d4ad7e608d9932a1d
+vendor/lib64/libh264dec_customize.so|0005b346ec23aaec1a7966fef981f2c3c7c58e99
+vendor/lib64/libh264dec_sa.ca7.so|9376e66b19d844a315a2297d9827d609594d7884
+vendor/lib64/libh264dec_sd.ca7.so|1688554db0ba1558fc0873b1d00c1d515a13e84d
+vendor/lib64/libh264dec_se.ca7.so|9a224f3b22f7a3ae1ee34c5f428bfdf87f6d01c3
+vendor/lib64/libmp4enc_sa.ca7.so|60d590d0826f9635bc3cf9fde79221616b75f953
+vendor/lib64/libvp8dec_sa.ca7.so|1ea0ba071a9ab420db8a7c7d3f9ce7216cc0658b
+vendor/lib64/libvp9dec_sa.ca7.so|2790ba96b770be695f45f76e34de30b6d960bd6d
+vendor/lib64/AVCSecureVdecCA.so|33fba4801dd3a43ea7ea400e3d03b067987b21b1
+vendor/lib64/HEVCSecureVdecCA.so|6353df250d19feb6a13f101155411c3483f73e93
+vendor/lib64/VP9SecureVdecCA.so|42a78b8247255d07e2982d505a606972bc956a42
+vendor/lib64/libAVCSecureVencCA.so|499979d7fbe46d6a2388d06e5f64858bf2872b62
+vendor/lib64/libJpgEncPipe.so|1d6a0e1f928e4eaaa2a238cb1fb244da4e76d6ec
+vendor/lib64/libjpeg-alpha-oal_vendor.so|9de2c98b33df7060cea4094afa3ce741a7a78d20
+vendor/lib64/libjpeg-alpha_vendor.so|0c793e55a8600596d5764ee418e250468c38e7f4
+vendor/lib64/libhevce_sb.ca7.android.so|5be37f6d6b20d4d5308188cf27b632b34e0a0a3a
+vendor/lib64/libheichal.so|36d9a094e7abd5d33e149a29c7b21503b2e0ee87
+vendor/lib64/libvcodec_oal.so|2adc4a6880b98b9a7ebd1cc26523ba4506d235bb
+vendor/lib64/libvcodecdrv_header_stub.so|a07f2efaee6de1f8345942a8c4368f81e3a12d51
 
 # Media (VPU)
 vendor/lib64/libmvpu_cic_ci_compiler.so

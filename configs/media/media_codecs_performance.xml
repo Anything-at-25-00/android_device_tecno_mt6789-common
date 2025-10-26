@@ -66,15 +66,11 @@ Only the three quirks included above are recognized at this point:
     <Encoders>
         <!-- MTK codec -->
         <MediaCodec name="c2.mtk.avc.encoder" type="video/avc" update="true">
-            <!--BSP: modify XLQLBH-1277 by junhong.cai 20220601 start-->
-            <Limit name="measured-frame-rate-320x240" range="81-179" />
-            <!--BSP: modify XLQLBH-1277 by junhong.cai 20220601 end-->
             <Limit name="measured-frame-rate-720x480" range="32-70" />
             <Limit name="measured-frame-rate-1280x720" range="62-141" />
             <Limit name="measured-frame-rate-1920x1080" range="55-122" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.hevc.encoder" type="video/hevc" update="true">
-            <Limit name="measured-frame-rate-320x240" range="139-305" />
             <Limit name="measured-frame-rate-640x480" range="267-540" />
             <Limit name="measured-frame-rate-720x480" range="68-149" />
             <Limit name="measured-frame-rate-1280x720" range="45-170" />

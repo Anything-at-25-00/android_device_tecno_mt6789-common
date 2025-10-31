@@ -484,6 +484,11 @@
       "Node": "DoubleTapToWake",
       "Duration": 0,
       "Value": "cc1"
+    },
+    {
+      "PowerHint": "EXPENSIVE_RENDERING",
+      "Type": "EndHint",
+      "Value": "INTERACTION"
     }
   ]
 }

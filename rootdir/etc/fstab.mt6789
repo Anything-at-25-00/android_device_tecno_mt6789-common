@@ -38,7 +38,6 @@ odm_dlkm /odm_dlkm erofs ro wait,slotselect,avb,logical,first_stage_mount,readah
 
 
 
-/dev/block/by-name/tranfs /tranfs ext4 noatime,nosuid,nodev,noauto_da_alloc,discard wait,check,formattable,nofail,first_stage_mount
 
 
 
